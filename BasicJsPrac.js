@@ -1,20 +1,23 @@
 // Q.1 Count the Vowels in the strings
 function countVowels(str) {
+    console.log("The given parameter:", str);
     const vowels = "aeiou";
     let counter = 0;
-
-            for(let elm of str){
-                if(vowels.includes(elm)){
+    
+    for(let elm of str){
+        if(vowels.includes(elm)){
             counter++
         }
     }
     
     return counter;
 }
-// console.log(isEven(2));
+console.log("Question 1, Count the Vowel",countVowels('dog'));
+console.log("***********************************");
 
 // Q. 2 Print the its even or odd
 function isEven(num) {
+    console.log("The given parameter: ", num);
     if(isNaN(num)){
         return 'Its a String';
     }else{
@@ -24,18 +27,20 @@ function isEven(num) {
     }
 }
 
+console.log("Question 2, isEven: ",isEven(2));
+console.log("***********************************");
 
-// console.log(countVowels('dog'));
 
 // Q. 3 Print the opposite of the given number
 function oppositeNum(num) {
+    console.log("The given parameter: ", num);
     if(isNaN(num)){
         return 'Its a string';
     }
     return -num;
 }
-
-// console.log(oppositeNum(6));
+console.log("Question 3, find the negation of", oppositeNum(-3));
+console.log("***********************************");
 
 // Q. 4 getTheMiddle character
 function getMiddleTwoChar(str) {
@@ -51,14 +56,16 @@ function getMiddleTwoChar(str) {
             return `The middle character: ${str[(str.length/2)-1] + str[str.length/2]}`;
         }
         console.log("Word is: ",str);
-        console.log('The length of the string is ODD: To get the middle char');
+        console.log('The length of the string is odd: To get the middle char');
         console.log("This will produce decimal value: ", str.length/2);
         
         return `By using Math.floor the middle char is: "${str[Math.floor(str.length/2)]}"`;
     }
     return "Its a number"
 }
-// console.log(getMiddleTwoChar('testin'));
+console.log("Question 4 get the middle char: ",getMiddleTwoChar('ullas'));
+
+console.log("********************************************");
 
 // Q. 5 Jaden caseing
 function capitalizer(word) {
@@ -67,6 +74,7 @@ function capitalizer(word) {
 }
 
 function tojadenCase(str) {
+    console.log("The given parameter: ", str);
     const words = str.split(" ");
     let finalResult = [];
     for (const word of words) {
@@ -74,7 +82,9 @@ function tojadenCase(str) {
     }
     return finalResult.join(' ');
 }
-// console.log(tojadenCase("Holaaa this is awesome"));
+console.log("Question 5: Jaden Case: ",tojadenCase("each word initial should be capital"));
+
+console.log("********************************************");
 
 // Q. 5 Mumblings...
 function MumbleCapitalizer(char, repet) {
@@ -97,4 +107,5 @@ function mumbler(str) {
     }
     return result.join("-");
 }
-console.log(mumbler('abcd'));
+
+console.log("Question 6 Mumbling: ",mumbler('abcd'));
