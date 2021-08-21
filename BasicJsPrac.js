@@ -109,3 +109,95 @@ function mumbler(str) {
 }
 
 console.log("Question 6 Mumbling: ",mumbler('abcd'));
+
+console.log("********************************************");
+
+function findMax(nums) {
+    let max = 0;
+    for (let i = 0; i < nums.length; i++) {
+        if(nums[i]){
+            
+        }
+    }
+    return max;
+}
+console.log("Question 7 findMax: ", findMax([2,3,4,6,3,6,12]));
+console.log("********************************************");
+
+function squareDigits(num) {
+    let numString = num.toString().split("");
+    console.log(num,"num converted to string then split \"\"",numString);
+    
+    let squaredNums =  "";
+    for(let eachNum of numString){
+        squaredNums +=  Math.pow(Number(eachNum), 2)
+    }
+    return Number(squaredNums)
+}
+
+console.log(squareDigits(20));
+console.log("********************************************");
+
+console.log('ooxx => should return true' );
+console.log('xooxx => should return false' );
+console.log('ooxXm => should return true' );
+console.log('asdbasd => should return true' );
+console.log('zzoo => should return false' );
+
+function ExesAndOhs(str) {
+    let XCount = 0;
+    let OCount = 0;
+    for(let char of str.toLowerCase()){
+        // console.log(char);
+        if(char === 'x'){
+            XCount++;
+        }
+        if(char === 'o'){
+            OCount++;
+        }
+        // console.log('XCount:', XCount, 'OCount:', OCount);
+    }
+    if(XCount === 0 && OCount === 0){
+        return true;
+    }else if(XCount === OCount){
+        return true
+    }else{
+        return false
+    }
+}
+
+console.log('ooxx', ExesAndOhs('ooxx'));
+console.log('xooxx', ExesAndOhs('xooxx'));
+console.log('ooxXm', ExesAndOhs('ooxXm'));
+console.log('asdbasd', ExesAndOhs('asdbasd'));
+console.log('zzoo', ExesAndOhs('zzoo'));
+
+console.log("********************************************");
+
+console.log('likes([])\n=> no one like it');
+console.log('likes(["fPerson"])\n=> fPerson like it');
+console.log('likes(["fPerson", "sPerson"])\n=> fPerson & sPerson like it');
+console.log('likes(["fPerson", "sPerson", tPerson])\n=> fPerson, sPerson & tPersonlike it');
+console.log('likes(["fPerson", "sPerson", tPerson, fiPerson])\n=> fPerson, sPerson & 2 other like it');
+
+function likeSys(str) {
+    let item = str.length
+    switch (item) {
+        case 0:
+            return "Aww no one likes it yet";
+        case 1:
+            return `${str} likes it`;
+        case 2:
+            return `${str[0]} & ${str[1]} likes it`;
+        case 3: 
+            return `${str[0]}, ${str[1]}, ${str[2]} likes it`; 
+        default:
+            return `${str[0]}, ${str[1]} & ${item - 2} others like it`
+    }
+}
+console.log(likeSys([]));
+console.log(likeSys(["ullas"]));
+console.log(likeSys(["ullas", "villas"]));
+console.log(likeSys(["ullas", "villas", "kartik"]));
+console.log(likeSys(["ullas", "villas", "kunder", "kumer"]));
+console.log(likeSys(["ullas", "vil", "las", "kunder", "Awesome", "kumer"]));
