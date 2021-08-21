@@ -178,7 +178,10 @@ console.log('likes([])\n=> no one like it');
 console.log('likes(["fPerson"])\n=> fPerson like it');
 console.log('likes(["fPerson", "sPerson"])\n=> fPerson & sPerson like it');
 console.log('likes(["fPerson", "sPerson", tPerson])\n=> fPerson, sPerson & tPersonlike it');
-console.log('likes(["fPerson", "sPerson", tPerson, fiPerson])\n=> fPerson, sPerson & 2 other like it');
+console.log('likes(["fPerson", "sPerson", tPerson, fiPerson])\n=> fPerson, sPerson & 2 other like it\n\n');
+
+
+
 
 function likeSys(str) {
     let item = str.length
@@ -196,8 +199,12 @@ function likeSys(str) {
     }
 }
 console.log(likeSys([]));
+
 console.log(likeSys(["ullas"]));
+
 console.log(likeSys(["ullas", "villas"]));
 console.log(likeSys(["ullas", "villas", "kartik"]));
+
 console.log(likeSys(["ullas", "villas", "kunder", "kumer"]));
 console.log(likeSys(["ullas", "vil", "las", "kunder", "Awesome", "kumer"]));
+console.log(likeSys(["ullas", "vil", "las", "kunder", "Awesome", "kumer", "vil", "las", "kunder", "Awesome", ]));
