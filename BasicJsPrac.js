@@ -174,8 +174,9 @@ console.log('ooxXm', ExesAndOhs('ooxXm'));
 console.log('asdbasd', ExesAndOhs('asdbasd'));
 console.log('zzoo', ExesAndOhs('zzoo'));
 
-console.log("***************Like System*******************");
+console.log("***************Social Like System*******************");
 
+console.log('Question 10 Like system\n');
 console.log('likes([])\n=> no one like it');
 console.log('likes(["fPerson"])\n=> fPerson like it');
 console.log('likes(["fPerson", "sPerson"])\n=> fPerson & sPerson like it');
