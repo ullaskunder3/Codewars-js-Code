@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+body{
+    background-color: black;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 50%;
+    height: 70%;
+    padding: 5rem 1rem;
+
+    max-width: 60%;
+    border: 2px solid white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+.btn{
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.dice img{
+    width: 50px;
+    height: 50px;
+    /* background-image: url('./img/dice-1.png'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

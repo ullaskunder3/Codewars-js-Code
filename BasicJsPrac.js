@@ -110,7 +110,7 @@ function mumbler(str) {
 
 console.log("Question 6 Mumbling: ",mumbler('abcd'));
 
-console.log("********************************************");
+console.log("****************findMax******************");
 
 function findMax(nums) {
     let max = 0;
@@ -122,7 +122,7 @@ function findMax(nums) {
     return max;
 }
 console.log("Question 7 findMax: ", findMax([2,3,4,6,3,6,12]));
-console.log("********************************************");
+console.log("*****************square the digit********************");
 
 function squareDigits(num) {
     let numString = num.toString().split("");
@@ -135,8 +135,9 @@ function squareDigits(num) {
     return Number(squaredNums)
 }
 
-console.log(squareDigits(20));
-console.log("********************************************");
+console.log('Question 8 square the digit: ',squareDigits(20));
+
+console.log("**************count x & o*******************");
 
 console.log('ooxx => should return true' );
 console.log('xooxx => should return false' );
@@ -166,13 +167,14 @@ function ExesAndOhs(str) {
     }
 }
 
+console.log('Question 9 count x & o');
 console.log('ooxx', ExesAndOhs('ooxx'));
 console.log('xooxx', ExesAndOhs('xooxx'));
 console.log('ooxXm', ExesAndOhs('ooxXm'));
 console.log('asdbasd', ExesAndOhs('asdbasd'));
 console.log('zzoo', ExesAndOhs('zzoo'));
 
-console.log("********************************************");
+console.log("***************Like System*******************");
 
 console.log('likes([])\n=> no one like it');
 console.log('likes(["fPerson"])\n=> fPerson like it');
@@ -206,5 +208,5 @@ console.log(likeSys(["ullas", "villas"]));
 console.log(likeSys(["ullas", "villas", "kartik"]));
 
 console.log(likeSys(["ullas", "villas", "kunder", "kumer"]));
-console.log(likeSys(["ullas", "vil", "las", "kunder", "Awesome", "kumer"]));
-console.log(likeSys(["ullas", "vil", "las", "kunder", "Awesome", "kumer", "vil", "las", "kunder", "Awesome", ]));
+console.log(likeSys(["ullas", "vilas", "las", "kunder", "Awesome", "kumer"]));
+console.log(likeSys(["ullas", "vilas", "las", "kunder", "Awesome", "kumer", "kunder", "Awesome", ]));
